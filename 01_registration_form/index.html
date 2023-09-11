@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Race Registration</h1>
+    </header>
+    <main>
+        <form action="/register">
+            <div class="registrationItem">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="first" required>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="last" required>
+            </div>
+            <div class="registrationItem">
+                <p>
+                    Select a distance:
+                </p>
+                <div>
+                    <div><input type="radio" id="5k" value="5km" name="distance" required>
+                        <label for="5k">5 km</label>
+                    </div>
+                    <div><input type="radio" id="10k" value="10km" name="distance" required>
+                        <label for="10k">10 km</label>
+                    </div>
+                    <div><input type="radio" id="30k" value="30km" name="distance" required>
+                        <label for="30k">30 km</label>
+                    </div>
+                </div>
+            </div>
+            <div class="registrationItem">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="registrationItem">
+                <label for="age">Select Age group</label>
+                <select name="age" id="age" required>
+                    <option selected disabled></option>
+                    <option value="18_25">18-25</option>
+                    <option value="26_40">26-40</option>
+                    <option value="41_60">41-60</option>
+                    <option value="61_above">61+</option>
+                </select>
+            </div>
+
+            <button>Sign me up!</button>
+        </form>
+
+    </main>
+</body>
+
+</html>

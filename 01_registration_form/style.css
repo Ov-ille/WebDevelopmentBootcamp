@@ -1,0 +1,14 @@
+h1 {
+    width: max-content;
+    margin: auto
+}
+
+p {
+    margin: 0
+}
+
+.registrationItem {
+    margin: 10px 0;
+    padding: 10px 5px;
+    background-color: rgb(227, 227, 227);
+}
