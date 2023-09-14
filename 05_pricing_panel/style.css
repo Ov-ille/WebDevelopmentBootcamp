@@ -1,0 +1,121 @@
+html {
+    --border-color: rgb(214, 214, 214);
+    --dark-grey: rgb(122, 122, 122);
+    --light-blue: rgb(99, 141, 213);
+    --dark-blue: rgb(9, 71, 185);
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-blue);
+}
+
+
+.pricing-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 10px var(--dark-grey);
+    padding: 1em 1.5em;
+    text-align: center;
+    color: var(--dark-blue)
+}
+
+.pricing-img {
+    width: 100%;
+}
+
+.pricing-plan {
+    border-top: 2px solid var(--border-color);
+    padding: 1.5em 0;
+}
+
+.pricing-plan:first-of-type {
+    border-top: none;
+}
+
+.pricing-plan:last-of-type {
+    padding-bottom: none;
+}
+
+.pricing-header {
+    color: var(--dark-grey);
+    font-size: 1.5em;
+    padding: 0.75em
+}
+
+.pricing-price {
+    text-transform: uppercase;
+    font-weight: 800
+}
+
+.pricing-price {
+    display: block;
+    font-size: 1.5em;
+    margin: 0.5em
+}
+
+.pricing-button {
+    display: inline-flex;
+    border: 1px solid var(--border-color);
+    border-radius: 0.3em;
+    text-decoration: none;
+    color: var(--dark-blue);
+    padding: 0.5em 0.5em;
+    font-size: 1.15em;
+    transition: all 0.1s ease-in-out;
+}
+
+.pricing-plan:nth-of-type(2) .pricing-button {
+    background-color: var(--light-blue);
+    color: white
+}
+
+.pricing-plan:nth-of-type(2) .pricing-button:hover,
+.pricing-plan:nth-of-type(2) .pricing-button:focus {
+    background-color: var(--dark-blue);
+    color: white
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: var(--dark-blue);
+    color: white
+}
+
+.pricing-features-item {
+    border-top: 1px solid var(--border-color);
+    padding: 0.5em
+}
+
+.pricing-features-item:last-of-type {
+    border-bottom: 1px solid var(--border-color);
+}
+
+@media (min-width:750px) {
+
+    .pricing-table {
+        flex-direction: row;
+        max-width: 750px;
+    }
+
+    .pricing-plan {
+        border-top: none;
+        border-right: 2px solid var(--border-color);
+        padding: 2em
+    }
+
+    .pricing-plan:last-of-type {
+        border-right: none
+    }
+}
