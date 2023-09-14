@@ -14,6 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--light-blue);
+    flex-wrap: wrap
 }
 
 
@@ -28,7 +29,8 @@ body {
     box-shadow: 0px 0px 10px var(--dark-grey);
     padding: 1em 1.5em;
     text-align: center;
-    color: var(--dark-blue)
+    color: var(--dark-blue);
+    flex-basis: 100%
 }
 
 .pricing-img {
@@ -66,7 +68,7 @@ body {
 }
 
 .pricing-button {
-    display: inline-flex;
+    display: inline-block;
     border: 1px solid var(--border-color);
     border-radius: 0.3em;
     text-decoration: none;
@@ -102,6 +104,26 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
+hr {
+    flex-basis: 100%;
+    height: 0;
+    margin: 0;
+    border: 0;
+}
+
+.license {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 0.75em;
+    color: black;
+    padding: 2em
+}
+
+.license a {
+    text-decoration: none;
+    color: black
+}
+
 @media (min-width:750px) {
 
     .pricing-table {
@@ -117,5 +139,9 @@ body {
 
     .pricing-plan:last-of-type {
         border-right: none
+    }
+
+    .license {
+        padding: none
     }
 }
