@@ -1,0 +1,43 @@
+body {
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 15px;
+    background-color: rgb(228, 228, 228);
+}
+
+label {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.row {
+    align-items: center
+}
+
+.display-none {
+    display: none;
+}
+
+.visuallyhidden {
+    opacity: 0;
+}
+
+#warning-message {
+    color: red;
+    transition: all 250ms linear;
+}
+
+.col-input {
+    min-width: 90px
+}
+
+.pokemon {
+    display: inline-block;
+    text-align: center;
+}
+
+.pokemon img {
+    display: block;
+}
