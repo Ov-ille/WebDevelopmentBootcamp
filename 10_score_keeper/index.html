@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <title>Score Keeper</title>
+</head>
+
+<body>
+    <div id="winner" class="display-none"><span>PLAYER <span id="winner-player">1</span> WINS!</span></div>
+    <div class="container-fluid">
+        <div class="row justify-content-center main-content">
+            <div class="col border-div">
+                <div class="row">
+                    <div class="col"> <img src="tt.jpg" alt="table tennis"></div>
+                </div>
+                <div class="row">
+                    <div class="col text-center my-0">
+                        <h1 class="my-0">Table Tennis Score Keeper</h1>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col px-3 py-3">
+                        <div id="score" class="pb-2">
+                            <span id="score-p1">0</span> to <span id="score-p2">0</span>
+                        </div>
+                        <div>
+                            Playing to <select name="" id="score-max">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-btns">
+                    <div class="col col-btns"><button class="btn-control btn-control-active btn-count" id="btn-1">+1
+                            Player
+                            One</button></div>
+                    <div class="col col-btns"><button class="btn-control btn-control-active btn-count" id="btn-2">+1
+                            Player
+                            Two</button></div>
+                    <div class="col col-btns"><button class="btn-control btn-control-active btn-reset"
+                            id="btn-3">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+
+</body>
+<script src="js.js"></script>
+
+</html>
