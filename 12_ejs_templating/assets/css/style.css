@@ -1,0 +1,19 @@
+body {
+    background-color: lightgrey;
+}
+
+.post-img {
+    width: 50vw
+}
+
+.post {
+    border: 1px solid darkgrey;
+    margin-top: 10px;
+    background-color: rgb(188, 188, 188);
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    padding-top: 15px
+}
